@@ -1,0 +1,233 @@
+button{
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 158px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 18px;
+   
+}
+
+button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto';
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 100px;
+    
+}
+
+.cardone{
+    background-color: #ebe9e9;
+    width: 800px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-top: 70px;
+
+    
+    
+   
+}
+
+#chone{
+    display: none;
+}
+
+#chonelabels{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color:rgb(2, 158, 255);
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.contentone{
+    display: none;
+}
+
+#chone:checked ~ .contentone{
+    display: block;
+}
+
+#chone:checked ~ label {
+    display: none;
+}
+
+.cardtwo{
+    background-color: #ebe9e9;
+    width: 800px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+   
+}
+
+#chtwo{
+    display: none;
+}
+
+#chtwolabels{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color:rgb(2, 158, 255);
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.contenttwo{
+    display: none;
+}
+
+#chtwo:checked ~ .contenttwo{
+    display: block;
+}
+
+#chtwo:checked ~ label {
+    display: none;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.about{
+    margin-bottom: 25px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(90, 89, 89);
+    line-height: 1.5;
+}
+
+#field_1-1{
+    padding-bottom: 12px;
+    text-align: center;
+    
+}
+
+#field_1-2{
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+#field_1-3{
+    text-align: center;
+    padding-bottom: 12px;
+    
+}
+
+.tips{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.cardthr{
+    background-color: #ebe9e9;
+    width: 800px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+   
+}
+
+#chthr{
+    display: none;
+}
+
+#chthrlabels{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color:rgb(2, 158, 255);
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.contentthr{
+    display: none;
+}
+
+#chthr:checked ~ .contentthr{
+    display: block;
+}
+
+#chthr:checked ~ label {
+    display: none;
+}
+
+.cardf{
+    background-color: #ebe9e9;
+    width: 800px;
+    padding: 22px 30px;
+    border-radius: 5px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+   
+}
+
+#chf{
+    display: none;
+}
+
+#chflabels{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color:rgb(2, 158, 255);
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.contentf{
+    display: none;
+}
+
+#chf:checked ~ .contentf{
+    display: block;
+}
+
+#chf:checked ~ label {
+    display: none;
+}

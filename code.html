@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Elektros taupymo skaičiuotuvas</title>
+        <meta charset="windows-1252">
+        <link rel="stylesheet" href="code.css">
+        <meta name="viewport" content="width=device-width, initial scale 1.0">  
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+       <div class="title">
+       <h1>Elektros sąnaudų skaičiuoklė
+         </h1> 
+       </div>
+
+       <div class="about">
+       <p>Ši elektros sąnaudų skaičiuoklė padės jums apskaičiuoti elektros sąnaudas ir pateiks naudingų 
+        patarimų, kaip taupyti elektros energiją. Kad apskaičiuotumėte elektros sąnaudas į pirmąjį laukelį 
+        įveskite kiek kW sunaudojate per mėnesį, o į antrąjį - kiek mokate už 1kWh elektros. Tada paspauskite 
+        mygtuką skaičiuoti ir sistema apskaičiuos, kiek sumokėsite už elektrą šį mėnesį.</p>
+    </div>
+
+        <div class="fields fieldname11_1 cff-number-field" id="field_1-1">
+            <label for="fieldname11_1">Sunaudotų kW kiekis per mėnesį</label>
+            <div class="dfield">
+                <input aria-label="Sunaudotų kW kiekis per mėnesį" id="fieldname11_1" name="fieldname11_1" min="0" class="field number small" type="number" value="0">
+                <span class="uh"></span>
+            </div>
+            <div class="clearer"></div>
+        </div>
+        <!-- pirmojo laukelio kodas -->
+
+
+        <div class="fields fieldname9_1 cff-number-field" id="field_1-2">
+            <label for="fieldname9_1">Elektros kaina (€/kWh)</label>
+            <div class="dfield">
+                <input aria-label="Elektros kaina (€/kWh)" id="fieldname9_1" name="fieldname9_1" min="0" class="field number small" type="number" value="0">
+                <span class="uh"></span>
+
+            </div>
+            <div class="clearer"></div>
+        </div>
+        <!-- antrojo laukelio kodas -->
+
+        <div class="fields fieldname1_1 cff-calculated-field" id="field_1-3" style>
+            <label for="fieldname1_1">Suma(€)</label>
+            <div class="dfield">
+                <input aria-label="Suma" id="fieldname1_1" name="fieldname1_1" class="codepeoplecalculatefield" type="text" value="0" dep notdep>
+                <span class="uh"></span>
+
+            </div>
+            <div class="clearer">
+            </div>
+            <!-- trečiojo laukelio kodas -->
+
+           
+            <script>
+                function mulVals(){
+                    var one = document.getElementById("fieldname11_1").value;
+                    var two = document.getElementById("fieldname9_1").value;
+                    var total = parseFloat(one)*parseFloat(two);
+                    document.getElementById("fieldname1_1").value = total;
+                }
+            </script>
+            <!-- funkcija, kuri sudaugina pirmąjį ir anrąjį laukelius -->
+
+            <button onclick="mulVals()">
+             Skaičiuoti</button>
+             <!-- mygtukas, kurį paspaudus įvyksta daugyba ir yra apsakičiuojama suma -->
+
+             <div class="tips">
+             <h1>Patarimai, kaip taupyti elektrą</h1>
+            </div>
+
+            
+
+            <div class="cardone">
+                <input id="chone" type="checkbox">
+
+                <h2>Atnaujinkite senus prietaisus.</h2>
+                <p>Net ir seni prietaisai gali puikiai tarnauti jūsų namuose, tačiau nepamirškite, kad
+                    jie dažnai vartoja ypač daug elektros energijos...</p>
+                <div class="contentone">
+                    <p>Pirkdami naujus prietaisus, atkreipkite dėmesį,
+                        kad jie būtų A klasės. B ir C klasės prietaisai irgi yra pakankamai taupūs. Prietaisai žemiau D klasės yra
+                         netaupūs ir venkite tokius prietaisus pirkti.
+                         Šiuolaikiniai prietaisai paprastai tiekiami su lipduku, nurodančiu
+                         informaciją apie energijos taupymo klasę.</p>
+                        
+                         <label id="chonelabels" for="chone">Mažiau</label>
+                </div>
+                <label id="chonelabels" for="chone">Daugiau</label>
+            </div>
+
+            <div class="cardtwo">
+                <input id="chtwo" type="checkbox">
+
+                <h2>Dienos šviesa.</h2>
+                <p>Pasirūpinkite kad į namus patektų kuo daugiau dienos šviesos. Baldus sustatykite taip, jog
+                    jie neužstotų langų. Darbo vietą taip pat pasiruoškite gerai apšviestoje vietoje...</p>
+                <div class="contenttwo">
+                    <p>Plačiai
+                        paplitęs mitas, kad šviesos įjungimas kainuoja daugiau nei pastovus lemputės degimas yra neteisingas.
+                         Jei dienos šviesos nepakanka – naudokite lokalų apšvietimą, pavyzdžiui, stalines lempas. Taip sunaudojama
+                          mažiau energijos.</p>
+                        
+                         <label id="chtwolabels" for="chtwo">Mažiau</label>
+                </div>
+                <label id="chtwolabels" for="chtwo">Daugiau</label>
+            </div>
+
+
+            <div class="cardthr">
+                <input id="chthr" type="checkbox">
+
+                <h2>Išjunkite iš elektros lizdo visus nenaudojamus prietaisus.</h2>
+                <p>Kas kartą išeidami iš namų, eidami miegoti ar baigę naudotis elektros prietaisu, išjunkite
+                    jį iš elektros lizdo...</p>
+                <div class="contentthr">
+                    <p>Net išmaniojo telefono įkroviklio laidas naudoja elektrą, už kurią mokate, net
+                        jei ir laidu tuo metu nieko neįkraunate. Šią klaidą padaro daug žmonių ir nors joks prietaisas nėra įkraunamas ar įjungtas,
+                      elektra vistiek yra eikvojama. Prietaisai, kurie palikti įjungti sunaudoja daugiausia elektros energijos yra: televizoriai, 
+                      stacionarūs ir nešiojamieji kompiuteriai, prietaisai su laikmačiu.</p>
+                        
+                         <label id="chthrlabels" for="chthr">Mažiau</label>
+                </div>
+                <label id="chthrlabels" for="chthr">Daugiau</label>
+            </div>
+
+
+            <div class="cardf">
+                <input id="chf" type="checkbox">
+
+                <h2>Reguliariai valykite dulkes nuo elektronikos.</h2>
+                <p>Jeigu dar nežinote, dulkės yra vienas iš didžiausių efektyvių buities prietaisų priešų...</p>
+                <div class="contentf">
+                    <p>Pirma, dulkės neleidžia
+                        prietaisams ir elektriniams varikliams veikti efektyviai. Antra, jos apsunkina prietaisų vėdinimo ir aušinimo sistemas.
+                         Trečia, ilgainiui dulkės gali tapti gedimo priežastimi. Dėl to reguliariai valykite dulkes nuo kompiuterio, televizoriaus, elektros
+                          lempučių, elektrinių šildytuvų ir t.t.</p>
+                        
+                         <label id="chflabels" for="chf">Mažiau</label>
+                </div>
+                <label id="chflabels" for="chf">Daugiau</label>
+            </div>
+
+            
+
+
+
+
+                
+            
+            
+
+
+
+    </body>
+</html>
